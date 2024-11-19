@@ -1,7 +1,7 @@
 {
   "name": "@inkonchain/ink-kit",
   "version": "0.0.10",
-  "description": "",
+  "description": "testing amplify build",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",

@@ -1,19 +1,19 @@
 version: 1
 applications:
-  - frontend:
-      phases:
-        preBuild:
-          commands:
-            - npm install -g pnpm@9.11.0
-        build:
-          commands:
-            - pnpm install
-            - pnpm run build-storybook
-      artifacts:
-        baseDirectory: storybook-static
-        files:
-          - "**/*"
-      cache:
-        paths:
-          - node_modules/**/*
-          - .pnpm-store/**/*
+    - frontend:
+        phases:
+          preBuild:
+            commands:
+              - npm install -g pnpm@9.11.0
+          build:
+            commands:
+              - pnpm install
+              - pnpm run build-storybook
+        artifacts:
+          baseDirectory: storybook-static
+          files:
+            - "**/*"
+        cache:
+          paths:
+            - node_modules/**/*
+            - .pnpm-store/**/*

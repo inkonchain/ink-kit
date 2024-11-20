@@ -8,6 +8,7 @@ import { PolymorphicProps } from "../polymorphic";
 
 const DEFAULT_BUTTON_TAG = "button" as const;
 
+//test
 export type ButtonProps<T extends ElementType = typeof DEFAULT_BUTTON_TAG> =
   PolymorphicProps<T> & {
     variant?: "primary" | "secondary";

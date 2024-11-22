@@ -1,6 +1,6 @@
 import { PropsWithChildren } from "react";
-import { DefaultAppIcon } from "../../icons";
 import { classNames, resetClasses } from "../../util/classes";
+import { InkPlaceholderLogo } from "../../icons/InkPlaceholderLogo";
 
 export interface InkLayoutProps extends PropsWithChildren {
   mainIcon?: React.ReactNode;
@@ -10,7 +10,7 @@ export interface InkLayoutProps extends PropsWithChildren {
 }
 
 export const InkLayout: React.FC<InkLayoutProps> = ({
-  mainIcon = <DefaultAppIcon className="ink-size-6" />,
+  mainIcon = <InkPlaceholderLogo className="ink-size-6" />,
   headerContent,
   sideNavigation,
   topNavigation,

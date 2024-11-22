@@ -1,4 +1,3 @@
-<div class="ink-group">
   <svg width="100%" height="100%" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
   <mask id="mask0_6397_25467" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="44" height="44">
     <g class="ink-origin-center ink-animate-spin [animation-play-state:paused] group-hover:[animation-play-state:running]">
@@ -24,4 +23,3 @@
   </radialGradient>
   </defs>
   </svg>
-</div>

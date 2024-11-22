@@ -16,7 +16,7 @@ export const spacing = {
 
 /** @satisfies {import('tailwindcss').Config} */
 const config = {
-  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  content: ["./src/**/*.{js,ts,jsx,tsx,svg}"],
   prefix: "ink-",
   theme: {
     gap: spacing,
@@ -97,6 +97,11 @@ const config = {
       menu: "var(--ink-box-shadow-menu)",
       modal: "var(--ink-box-shadow-modal)",
       layout: "var(--ink-box-shadow-layout)",
+    },
+    extend: {
+      animation: {
+        spin: "var(--ink-animation-spin)",
+      },
     },
   },
   plugins: [],

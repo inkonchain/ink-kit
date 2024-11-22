@@ -1,3 +1,4 @@
+@import url("./styles/animations.css") layer(ink-kit);
 @import url("./styles/borders.css") layer(ink-kit);
 @import url("./styles/typography.css") layer(ink-kit);
 @import url("./styles/resets.css") layer(ink-preflight);

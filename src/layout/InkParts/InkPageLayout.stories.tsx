@@ -23,10 +23,7 @@ const meta: Meta<InkPageLayoutProps> = {
           args={{
             ...args,
             children: args.children ?? (
-              <ExampleDynamicContent
-                columns={args.columns}
-                className="ink:min-h-[500px]"
-              />
+              <ExampleDynamicContent columns={args.columns} />
             ),
           }}
         />

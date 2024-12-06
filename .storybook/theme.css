@@ -2,3 +2,16 @@
 .sb-show-main {
   background-color: var(--ink-background-dark);
 }
+
+.sb-main-fullscreen {
+  height: 100%;
+
+  #storybook-root {
+    height: 100%;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}

@@ -29,7 +29,7 @@ export const InkLayout: React.FC<InkLayoutProps> = ({
     <>
       <div
         className={classNames(
-          "ink:flex ink:flex-col ink:min-h-full ink:pb-5 ink:min-w-[320px] ink:font-default ink:text-text-default ink:gap-5 ink:box-border"
+          "ink:flex ink:flex-col ink:h-full ink:pb-5 ink:min-w-[320px] ink:font-default ink:text-text-default ink:gap-5 ink:box-border"
         )}
       >
         <div className="ink:w-full ink:flex ink:justify-between ink:items-center ink:gap-3 ink:px-5 ink:pt-4 ink:box-border">
@@ -67,14 +67,14 @@ export const InkLayout: React.FC<InkLayoutProps> = ({
         </div>
         <div
           className={classNames(
-            "ink:flex ink:flex-1 ink:mx-5 ink:box-border",
+            "ink:flex ink:flex-1 ink:mx-5 ink:box-border ink:shrink-0",
             sideNavigation && "ink:lg:ml-0"
           )}
         >
           {sideNavigation && (
             <div
               className={classNames(
-                "ink:w-[260px] ink:px-4 ink:hidden ink:lg:block"
+                "ink:w-[260px] ink:px-4 ink:hidden ink:lg:block ink:shrink-0"
               )}
             >
               {sideNavigation}

@@ -20,7 +20,7 @@
 }
 
 /*
-  This allow us to use the dark theme over the light theme by default, depending on user preference.
+  This allows us to use the dark theme over the light theme by default, depending on user preference.
   The overrides should _exactly_ match the variables above.
 */
 @media (prefers-color-scheme: dark) {

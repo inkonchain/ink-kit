@@ -8,7 +8,7 @@ Ink Kit is an onchain-focused SDK that delivers a delightful developer experienc
 npm install @inkonchain/ink-kit
 # or
 pnpm install @inkonchain/ink-kit
-```
+```//
 
 ## Resources
 

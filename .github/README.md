@@ -90,3 +90,4 @@ To see examples on specific colors that you can override, check the following [t
 ## WIP Notice
 
 This is a work in progress: we are constantly adding new components, improving the developer experience, and fixing bugs.
+*

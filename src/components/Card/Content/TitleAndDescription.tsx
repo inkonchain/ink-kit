@@ -15,7 +15,7 @@ export const TitleAndDescription = ({
     <div className="ink:flex ink:flex-col ink:gap-2">
       <h3
         className={classNames(
-          "ink:text-body-1-bold ink:text-(--ink-card-default-color) ink:box-border ink:m-0 ink:-my-px",
+          "ink:text-body-1-bold ink:text-[--ink-card-default-color] ink:box-border ink:m-0 ink:-my-px",
           variantClassNames(size, {
             default: "ink:text-h3",
             small: "ink:text-body-1-regular",
@@ -28,7 +28,7 @@ export const TitleAndDescription = ({
       {description && (
         <div
           className={classNames(
-            "ink:text-body-3-regular ink:text-(--ink-card-muted-color) ink:box-border ink:m-0",
+            "ink:text-body-3-regular ink:text-[--ink-card-muted-color] ink:box-border ink:m-0",
             variantClassNames(size, {
               default: "ink:text-body-1-regular",
               small: "ink:text-body-3-regular",

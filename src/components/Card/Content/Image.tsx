@@ -19,7 +19,7 @@ export const Image: React.FC<ImageProps> = ({
   return (
     <div
       className={classNames(
-        "ink:rounded-(--ink-card-rounded) ink:overflow-hidden ink:box-border ink:relative",
+        "ink:rounded-[--ink-card-rounded] ink:overflow-hidden ink:box-border ink:relative",
         className
       )}
     >

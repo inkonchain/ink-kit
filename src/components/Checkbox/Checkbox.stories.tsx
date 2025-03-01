@@ -120,7 +120,7 @@ export const NestingWithIndeterminateState: Story = {
   },
 };
 
-/** If you want to use the Checkbox without it's own managed state, set checked={undefined} and onChange={undefined}, and add `data-checked={value}` to the parent item. */
+/** If you want to use the Checkbox without its own managed state, set checked={undefined} and onChange={undefined}, and add `data-checked={value}` to the parent item. */
 export const ManagedByAParentItem: Story = {
   argTypes: {
     onChange: {

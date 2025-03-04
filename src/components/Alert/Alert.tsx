@@ -48,7 +48,7 @@ export const Alert: React.FC<AlertProps> = ({
   const defaultIcon = {
     success: <InkIcon.Check />,
     error: <InkIcon.Error />,
-    warning: <InkIcon.Error />,
+    warning: <InkIcon.Warning />,
     info: <InkIcon.Settings />,
   }[variant];
 

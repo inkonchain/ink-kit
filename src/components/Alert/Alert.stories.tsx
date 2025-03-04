@@ -55,7 +55,7 @@ export const TitleOnly: Story = {
   },
 };
 
-export const Dismissable: Story = {
+export const Dismissible: Story = {
   args: {
     variant: "info",
     title: "This alert can be dismissed",

@@ -97,7 +97,7 @@ async function createIndexFile(folder) {
   );
 }
 
-const currentDir = import.meta.dirname;
+const currentDir = new URL('.', import.meta.url).pathname;
 const dirToProcess = path.join(currentDir, "../src/icons");
 await processSvgsInFolder(dirToProcess);
 await createIndexFile(dirToProcess);

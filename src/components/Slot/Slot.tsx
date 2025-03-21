@@ -92,7 +92,7 @@ const SlotClone = React.forwardRef<any, SlotCloneProps>(
     }
 
     return React.Children.count(children) > 1
-      ? React.Children.only(null)
+      ? React.Children.only(children)
       : null;
   }
 );

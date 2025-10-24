@@ -6,7 +6,8 @@
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
   "files": [
-    "/dist"
+    "/dist",
+    "./tailwind.config.mjs"
   ],
   "exports": {
     ".": {

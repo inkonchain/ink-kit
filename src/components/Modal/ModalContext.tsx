@@ -11,15 +11,18 @@ export interface ModalManagementContextProps {
   getModalIndex: (id: string) => number;
 }
 
-export const ModalManagementContext =
-  createContext<ModalManagementContextProps>({
-    openModals: [],
-    openModal: () => {},
-    closeModal: () => {},
-    isModalOpen: () => false,
-    closeAllModals: () => {},
-    getModalIndex: () => 0,
-  });
+const throwFn = () => {
+  throw new Error("ModalContext used outside of ModalProvider");
+};
+
+export const ModalManagementContext = createContext<ModalManagementContextProps>({
+  openModals: [],
+  openModal: throwFn,
+  closeModal: throwFn,
+  isModalOpen: () => false,
+  closeAllModals: throwFn,
+  getModalIndex: () => -1,
+});
 
 export interface ModalContextProps {
   openModal: () => void;
@@ -31,14 +34,18 @@ export interface ModalContextProps {
 export const useModalContext = (id: string): ModalContextProps => {
   const { openModals, openModal, closeModal, isModalOpen, getModalIndex } =
     useContext(ModalManagementContext);
+
+  const isOpen = isModalOpen(id);
+  const index = getModalIndex(id);
+
   return useMemo(
     () => ({
       openModal: () => openModal(id),
       closeModal: () => closeModal(id),
-      isModalOpen: isModalOpen(id),
-      modalIndex: getModalIndex(id),
+      isModalOpen: isOpen,
+      modalIndex: index,
     }),
-    [id, openModals]
+    [id, isOpen, index]
   );
 };
 
@@ -64,7 +71,7 @@ export const ModalProvider = ({ children }: { children: React.ReactNode }) => {
       },
       getModalIndex: (id: string) => openModals.indexOf(id),
     }),
-    [openModals, setOpenModals]
+    [openModals]
   );
 
   return (
